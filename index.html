@@ -78,8 +78,7 @@ body {
   position: absolute;
   bottom: 30px;
   display: flex;
-  gap: 20px;
-  font-size: 1.2rem;
+  gap: 16px;
 }
 
 .menu-footer a {
@@ -110,9 +109,22 @@ body {
   <a href="#">Reservas</a>
 
   <div class="menu-footer">
-    <a href="https://instagram.com/alecfernz" target="_blank">Instagram</a>
-    <a href="mailto:alecfernz@gmail.com">Mail</a>
-  </div>
+  <a href="https://instagram.com/alecfernz" target="_blank" aria-label="Instagram">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <rect x="3" y="3" width="18" height="18" rx="5" ry="5" stroke="white" stroke-width="1.5"/>
+      <circle cx="12" cy="12" r="4" stroke="white" stroke-width="1.5"/>
+      <circle cx="17.5" cy="6.5" r="1" fill="white"/>
+    </svg>
+  </a>
+
+  <a href="mailto:alecfernz@gmail.com" aria-label="Email">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <rect x="3" y="5" width="18" height="14" rx="2" stroke="white" stroke-width="1.5"/>
+      <path d="M3 7l9 6 9-6" stroke="white" stroke-width="1.5"/>
+    </svg>
+  </a>
 </div>
 
 <script>
