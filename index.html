@@ -11,17 +11,18 @@
 body {
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
-  background: #fff;
+  background: #000;
+  color: #fff;
 }
 
-/* Contenedor portada */
+/* Imagen centrada */
 .hero {
   position: fixed;
   inset: 0;
   background-image: url('IMG_9965 (1) (1).JPG');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 45%;
 }
 
 /* Nombre */
@@ -30,7 +31,6 @@ body {
   top: 25px;
   left: 25px;
   font-size: 1.3rem;
-  color: black;
   z-index: 2;
 }
 
@@ -48,7 +48,7 @@ body {
 .menu {
   position: fixed;
   inset: 0;
-  background: white;
+  background: #000;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -56,19 +56,35 @@ body {
   z-index: 10;
 }
 
+/* Links menú */
 .menu a {
-  font-size: 2.4rem;
-  margin: 12px 0;
-  color: black;
+  font-size: 2.3rem;
+  margin: 10px 0;
+  color: white;
   text-decoration: none;
 }
 
+/* Cerrar */
 .close {
   position: fixed;
   top: 22px;
   right: 25px;
   font-size: 30px;
   cursor: pointer;
+}
+
+/* Footer menu */
+.menu-footer {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.menu-footer a {
+  color: white;
+  text-decoration: none;
 }
 </style>
 </head>
@@ -87,10 +103,16 @@ body {
 <!-- Menú -->
 <div class="menu" id="menu">
   <div class="close" onclick="closeMenu()">✕</div>
-  <a href="#">Diary of my life</a>
-  <a href="#">Instant</a>
-  <a href="#">About</a>
-  <a href="#">Bookings</a>
+
+  <a href="#">Diario</a>
+  <a href="#">Instantáneas</a>
+  <a href="#">Sobre mí</a>
+  <a href="#">Reservas</a>
+
+  <div class="menu-footer">
+    <a href="https://instagram.com/alecfernz" target="_blank">Instagram</a>
+    <a href="mailto:alecfernz@gmail.com">Mail</a>
+  </div>
 </div>
 
 <script>
