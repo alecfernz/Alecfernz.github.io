@@ -11,30 +11,40 @@
 body {
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
-  background: #000;
+  background: #fff;
 }
 
-/* Imagen portada */
+/* Contenedor portada */
 .hero {
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
+  inset: 0;
   background-image: url('IMG_9965 (1) (1).JPG');
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
+}
+
+/* Nombre */
+.name {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  font-size: 1.3rem;
+  color: black;
+  z-index: 2;
 }
 
 /* Botón menú */
 .menu-btn {
-  position: absolute;
-  top: 25px;
+  position: fixed;
+  top: 22px;
   right: 25px;
   font-size: 26px;
-  color: white;
   cursor: pointer;
-  z-index: 10;
+  z-index: 2;
 }
 
-/* Menú oculto */
+/* Menú */
 .menu {
   position: fixed;
   inset: 0;
@@ -43,18 +53,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .menu a {
   font-size: 2.4rem;
-  margin: 10px 0;
+  margin: 12px 0;
   color: black;
   text-decoration: none;
 }
 
 .close {
-  position: absolute;
-  top: 25px;
+  position: fixed;
+  top: 22px;
   right: 25px;
   font-size: 30px;
   cursor: pointer;
@@ -64,16 +75,18 @@ body {
 
 <body>
 
-<!-- Portada -->
+<!-- Imagen -->
 <div class="hero"></div>
 
-<!-- Botón abrir -->
+<!-- Nombre -->
+<div class="name">Alec Fernz</div>
+
+<!-- Botón menú -->
 <div class="menu-btn" onclick="openMenu()">☰</div>
 
 <!-- Menú -->
 <div class="menu" id="menu">
   <div class="close" onclick="closeMenu()">✕</div>
-  <a href="#">Home</a>
   <a href="#">Diary of my life</a>
   <a href="#">Instant</a>
   <a href="#">About</a>
