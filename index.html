@@ -2,61 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Alec Fernz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Playfair Display', serif;
-      background: #ffffff;
+      font-family: 'Cormorant Garamond', serif;
+      background: #fff;
       color: #000;
     }
-    .menu {
+    header {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-size: 1.4rem;
+    }
+    nav {
       height: 100vh;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      flex-direction: column;
     }
-    .menu a {
+    nav a {
+      font-size: 2.3rem;
+      margin: 10px 0;
       text-decoration: none;
-      color: #000;
-      font-size: 2rem;
-      margin: 0.6rem 0;
+      color: black;
     }
-    .menu a:hover {
-      opacity: 0.6;
+    nav a:hover {
+      opacity: 0.5;
     }
     footer {
       position: fixed;
       bottom: 30px;
       width: 100%;
       text-align: center;
+      font-size: 1rem;
     }
     footer a {
-      margin: 0 10px;
+      margin: 0 12px;
       text-decoration: none;
-      color: #000;
-      font-size: 1.2rem;
+      color: black;
     }
   </style>
 </head>
 <body>
 
-  <div class="menu">
-    <a href="#">Home</a>
-    <a href="#">Diary of my life</a>
-    <a href="#">Instant</a>
-    <a href="#">About</a>
-    <a href="#">Bookings</a>
-  </div>
+<header>Alec Fernz</header>
 
-  <footer>
-    <a href="https://instagram.com/tuusuario" target="_blank">Instagram</a>
-    <a href="mailto:tumail@mail.com">Mail</a>
-  </footer>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Diary of my life</a>
+  <a href="#">Instant</a>
+  <a href="#">About</a>
+  <a href="#">Bookings</a>
+</nav>
+
+<footer>
+  <a href="https://instagram.com/tuusuario" target="_blank">Instagram</a>
+  <a href="mailto:tucorreo@mail.com">Mail</a>
+</footer>
 
 </body>
 </html>
